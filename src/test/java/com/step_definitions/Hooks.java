@@ -1,9 +1,9 @@
 package com.step_definitions;
 
 import com.utils.Driver;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class Hooks {
 
-    @BeforeAll
+    @Before
     public static void setUp(Scenario scenario){
         /**
          * will print the tag that we're tesing
@@ -23,7 +23,7 @@ public class Hooks {
     }
 
 
-    @AfterAll
+    @After
     public static void tearDown(){
         Driver.closeDriver();
         System.out.println("End od the automation!");
