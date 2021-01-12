@@ -1,2 +1,5 @@
-package com.pages;public class BasePage {
+package com.pages;
+
+public class BasePage {
+
 }
