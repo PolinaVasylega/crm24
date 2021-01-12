@@ -1,2 +1,6 @@
-package com.pages;public class LoginPage {
+package com.pages;
+
+public class LoginPage extends BasePage {
+
+
 }
